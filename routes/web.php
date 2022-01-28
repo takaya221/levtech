@@ -10,4 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'PostController@index');
+Route::get('/', 'PostController@index'); 
+Route::get('/posts/{post}', 'PostController@show'); 
+//{}は動的
+//　'/'はURLの変わる部分 , @indexはPostController.phpのindex関数を指す
